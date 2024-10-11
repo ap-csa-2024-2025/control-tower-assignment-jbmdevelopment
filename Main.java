@@ -7,16 +7,20 @@ public class Main
    // Complete the code below
    
    // TODO: Create Airplane 1 and 2
-   
-   // TODO: Create a Scanner
-   
-   // TODO: Getting inputs for Airplane 3
+   Airplane plane1 = new Airplane();
+   Airplane plane2 = new Airplane("AAA02", 15.8, 128, 30000);
+   Scanner input = new Scanner(System.in);
    System.out.println("Enter the details of the third airplane (call-sign, distance, bearing and altitude): ");
-
-   // TODO: Create Airplane 3 from inputs
-   
-   // TODO: Print the initial positions
-   System.out.println("\nInitial Positions:");
+   System.out.println("Enter the call sign");
+   String name = input.nextLine();
+   System.out.println("Enter a dist");
+   double dist = input.nextDouble();
+   System.out.println("Enter a bearing (dir)");
+   int dir = input.nextInt();
+   System.out.println("Enter an altitude (feet)");
+   int altitude = input.nextInt();
+   Airplane plane3 = new Airplane(name, dist, dir, altitude);
+   System.out.println("\nInitial Positions: " + plane3.toString());
    
    // TODO: Print initial distances 
    System.out.println("\nInitial Distances:");
