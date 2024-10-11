@@ -19,7 +19,7 @@ public class Main
    int dir = input.nextInt();
    System.out.println("Enter an altitude (feet)");
    int altitude = input.nextInt();
-   Airplane plane3 = new Airplane(name, dist, dir, altitude);
+   Airplane plane3 = new Airplane(name.toUpperCase(), dist, dir, altitude);
    System.out.println("\nInitial Positions: " + plane3.toString());
    
    // TODO: Print initial distances 
